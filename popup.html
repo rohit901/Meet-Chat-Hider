@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <style>
+                        @import url(https://fonts.googleapis.com/css?family=Khula:800);
+                        @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+                        button {
+                                display: inline-block;
+                                padding: 0.7em 1.7em;
+                                margin: 0 0.3em 0.3em 0;
+                                border-radius: 0.2em;
+                                box-sizing: border-box;
+                                text-decoration: none;
+                                font-family:'Khula',sans-serif;
+                                font-weight: 900;
+                                color: #27187E;
+                                background-color: #FF8600;
+                                box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+                                text-align: center;
+                                position: relative;
+                        }
+                        button:active {
+                                box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+                        }
+                        .center {
+                                margin: 0;
+                                position: absolute;
+                                top: 70%;
+                                left: 50%;
+                                -ms-transform: translate(-50%, -50%);
+                                transform: translate(-50%, -50%);
+                        }
+
+                        .bg {
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 50%;
+                        }
+                        .cont {
+                                display: block;
+                                height: 20px;
+                                width: 20px;
+                        }
+                        .mainBG {
+                                display: block;
+                                height: 28em;
+                                width: 28em;
+                        }
+                        .console-container {
+
+                                font-family:Khula;
+                                font-size: 1em;
+                                text-align:center;
+                                height: 20%;
+                                width: 60%;
+                                display:block;
+                                position:absolute;
+                                color:white;
+                                top:0;
+                                bottom:0;
+                                left:0;
+                                right:0;
+                                margin:auto;
+                        }
+                        .console-underscore {
+                                display:inline-block;
+                                position:relative;
+                                top:-0.14em;
+                                left:10px;
+                                color: black;
+                        }
+                        .hidden {
+                                opacity:0;
+                        }
+                        .myHeading {
+
+
+                                font-family: 'Red Hat Display', sans-serif;
+                        }
+                        .myHeading2 {
+                                top: 20%;
+                                font-family: 'Red Hat Display', sans-serif;
+                                position: relative;
+                        }
+                        .myHeading3 {
+                                top: 18%;
+                                font-family: 'Khula', sans-serif;
+                                position: relative;
+                        }
+                        .myHeading4 {
+                                top: 10%;
+                                font-family: 'Khula', sans-serif;
+                                position: relative;
+                        }
+                        h1 {
+                                font-size: 1em;
+                                margin-left: 30%;
+                                color: #758BFD;
+                        }
+                        h2 {
+                                font-size: 1em;
+
+                                margin-left: 37%;
+                                color: black;
+                        }
+                        h3 {
+                                font-size: 0.95em;
+
+                                margin-left: 34%;
+                                color: black;
+                        }
+
+                </style>
+        </head>
+        <body>
+                <div class="mainBG">
+                        <img src="images/bg.jpg" class="bg">
+
+                                <div class="myHeading">
+                                        <h1>Google Meet Chat Hider</h1>
+                                </div>
+
+
+                        <div class='console-container'>
+                                <span id='text'></span>
+                                <div class='console-underscore' id='console'>&#95;
+
+                                </div>
+                        </div>
+
+                        <div class="center">
+                                <button id="hideChat">HIDE CHAT!</button>
+                        </div>
+
+                        <div class="myHeading2">
+                                <h2>Follow Me On</h2>
+                        </div>
+                        <div class="myHeading3">
+                                <h3>Twitter: @rohit901</h3><br>
+                        </div>
+                        <div class="myHeading4">
+                                <h3>Github: rohit901</h3>
+                        </div>
+                        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+                        <script src="popup.js"></script>
+                </div>
+
+
+        </body>
+</html>

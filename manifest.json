@@ -1,0 +1,27 @@
+{
+        "name": "Google Meet Chat Hider",
+        "version": "1.0",
+        "description": "Hides the Chat Section in Google Meet",
+        "permissions": ["activeTab", "declarativeContent", "storage"],
+        "background": {
+                "scripts": ["background.js"],
+                "persistent": true
+        },
+        "content_security_policy": "script-src 'self' https://code.jquery.com; object-src 'self'",
+        "page_action": {
+                "default_popup": "popup.html",
+                "default_icon": {
+                        "16": "images/noChat16.png",
+                        "32": "images/noChat32.png",
+                        "48": "images/noChat48.png",
+                        "128": "images/noChat128.png"
+                }
+        },
+        "icons": {
+                "16": "images/noChat16.png",
+                "32": "images/noChat32.png",
+                "48": "images/noChat48.png",
+                "128": "images/noChat128.png"
+        },
+        "manifest_version": 2
+}
