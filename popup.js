@@ -80,6 +80,7 @@ hideChat.onclick = function() {
                         if (data.state) {
                                 chrome.storage.sync.set({state: false}, function() {
                                         hideChat.innerText = "HIDE CHAT!";
+                                        alert("You have disabled chat popups. Click the button to dismiss");
                                 });
                         } else {
                                 chrome.storage.sync.set({state: true}, function() {
